@@ -3,31 +3,31 @@ Spring Boot + Spring Rest + MongoDB + Angular
 
 Assumes you have mongo db installed and running
 
-In this project, we have two services being deployed...
-Backend - Spring Boot Application that listens for REST service calls and establish a connection with mongodb using Spring Data
-Frontend - Display the data; emits REST calls to send/retrieve data from the backend.
+In this project, we have two services being deployed...  
+Backend - Spring Boot Application that listens for REST service calls and establish a connection with mongodb using Spring Data  
+Frontend - Display the data; emits REST calls to send/retrieve data from the backend.  
 
-Don't have to worry about CORS filtering...this is handled in back front and back.
+Don't have to worry about CORS filtering...this is handled in back front and back.  
 
 To start the backend service...
 ```
 $ cd backend/
 $ mvn spring-boot:run
 ```
-You can use postman or curl to test backend service.
-Base URL: `http://localhost:8080/api/workers`
+You can use postman or curl to test backend service.  
+Base URL: `http://localhost:8080/api/workers`  
 
 ## Available REST Calls
 
-Get Workers
-- [GET] `http://localhost:8080/api/workers`
+Get Workers  
+- [GET] `http://localhost:8080/api/workers`  
 
-Find Worker By Last Name (case-insensitive)
-- [GET] `http://localhost:8080/api/workers/find/${last_name_here}`
+Find Worker By Last Name (case-insensitive)  
+- [GET] `http://localhost:8080/api/workers/find/${last_name_here}`  
 
-Create Worker
-- [POST] `http://localhost:8080/api/workers`
-Example Body Params:
+Create Worker  
+- [POST] `http://localhost:8080/api/workers`  
+Example Body Params:  
 ```
 {
 	"id": "1",
@@ -47,9 +47,9 @@ Example Body Params:
 }
 ```
 
-Update Worker
-- [PUT] `http://localhost:8080/api/workers/${worker_id_here}`
-Example Body Params:
+Update Worker  
+- [PUT] `http://localhost:8080/api/workers/${worker_id_here}`  
+Example Body Params:  
 ```
 {
 	"firstName": "Bob",
@@ -67,6 +67,6 @@ Example Body Params:
 	"isActive": true
 }
 ```
-Delete Worker
-- [DELETE] `http://localhost:8080/api/workers/${worker_id_here}`
+Delete Worker  
+- [DELETE] `http://localhost:8080/api/workers/${worker_id_here}`  
 
