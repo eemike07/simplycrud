@@ -1,13 +1,36 @@
 # simplycrud
 Spring Boot + Spring Rest + MongoDB + Angular
 
-Assumes you have mongo db installed and running
+Prereqs:
+ - Mongo DB installed and running
+ - Java 8+
+ - Maven
+ - Node & NPM
+
+
+
 
 In this project, we have two services being deployed...  
 Backend - Spring Boot App that listens for REST service calls and connects with mongodb with Spring Data  
 Frontend - Display the data; emits REST calls to send/retrieve data from the backend.  
 
-Don't have to worry about CORS filtering...this is handled in back front and back.  
+Don't have to worry about CORS filtering...this is handled.  
+
+## Mongo DB  
+Assuming mongodb is installed  
+To start...  
+`$ mongod`
+
+## Frontend Service  
+To start the frontend service...  
+```
+$ cd frontend/
+$ npm install
+$ npm start
+```
+Base Frontend URL: `http://localhost:4200`
+
+## Backend Service
 
 To start the backend service...
 ```
@@ -17,7 +40,7 @@ $ mvn spring-boot:run
 You can use postman or curl to test backend service.  
 Base URL: `http://localhost:8080/api/workers`  
 
-## Available REST Calls
+### Available REST Calls
 
 Get Workers  
 - [GET] `http://localhost:8080/api/workers`  
