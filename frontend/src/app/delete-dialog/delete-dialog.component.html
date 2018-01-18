@@ -1,0 +1,15 @@
+<div>
+  <h2 md-dialog-title>Confirmation</h2>
+  <hr>
+  <mat-dialog-content>
+    Would you like to delete the following worker?
+    <br>
+    <br>
+    <strong>{{workerData}}</strong>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions>
+    <button md-raised-button (click)="onCloseConfirm()">CONFIRM</button>&nbsp;
+    <button md-raised-button (click)="onCloseCancel()">CANCEL</button>
+  </mat-dialog-actions>
+</div>

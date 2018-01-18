@@ -1,0 +1,21 @@
+<div>
+  <h2 md-dialog-title>{{workerData.firstName}}'s Details</h2>
+  <hr>
+
+  {{workerData.firstName}} <br>
+  {{workerData.lastName}} <br>
+  {{workerData.middleInitial}} <br>
+  {{workerData.email}} <br>
+  {{workerData.phoneNumber}} <br>
+  {{workerData.addressOne}} <br>
+  {{workerData.addressTwo}} <br>
+  {{workerData.city}} <br>
+  {{workerData.state}} <br>
+  {{workerData.zipcode}} <br>
+  {{workerData.active}} <br>
+
+  <hr>
+  <mat-dialog-actions>
+    <button md-raised-button (click)="onCloseCancel()">CLOSE</button>
+  </mat-dialog-actions>
+</div>

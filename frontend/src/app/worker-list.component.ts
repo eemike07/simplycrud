@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { WorkerService } from './worker.service';
 import { Worker } from './worker';
 import { NgForm } from '@angular/forms';
 
+import { MatPaginator, MatTableDataSource } from '@angular/material';
 
 
 @Component({
@@ -16,13 +17,17 @@ export class WorkerListComponent implements OnInit {
   editing: false;
   editingWorker: Worker = new Worker();
 
+  displayedColumns = ['position', 'name', 'weight', 'symbol'];
+  dataSource = new MatTableDataSource<Worker>(this.workers);
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   constructor(
     private workerService: WorkerService
   ) {}
 
   ngOnInit(): void {
     this.getWorkers();
+    this.dataSource.paginator = this.paginator;
   }
 
   getWorkers(): void {

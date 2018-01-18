@@ -3,9 +3,6 @@
 body {
   font-size: 18px;
   line-height: 1.58;
-  background: #d53369;
-  background: -webkit-linear-gradient(to left, #cbad6d, #d53369);
-  background: linear-gradient(to left, #cbad6d, #d53369);
   color: #333;
 }
 
@@ -30,8 +27,19 @@ input {
   text-align: center;
 }
 
+.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
 .worker-content {
-  max-width: 650px;
+  max-width: 1020px;
   width: 100%;
   margin: 0 auto;
   margin-top: 60px;
@@ -49,6 +57,10 @@ input {
 
 .form-control:focus {
   border: 1px solid #626262;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .worker-content .form-control {

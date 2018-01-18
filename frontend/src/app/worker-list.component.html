@@ -15,9 +15,11 @@
     </form>
   </div>
 
-  <table id="myTable" class="table">
+
+
+  <table id="myTable" class="mat-table">
     <thead>
-    <tr>
+    <tr class="mat-header-row">
       <th>Id</th>
       <th>First Name</th>
       <th>Middle Initial</th>
@@ -26,11 +28,11 @@
     </thead>
     <tbody>
     <tr *ngFor="let worker of workers">
-      <td class="col-sm-4">{{worker.id}}</td>
-      <td class="col-sm-4">{{worker.firstName}}</td>
-      <td class="col-sm-4">{{worker.middleInitial}}</td>
-      <td class="col-sm-4">{{worker.lastName}}</td>
-      <span class="worker-actions col-sm-4">
+      <td>{{worker.id}}</td>
+      <td>{{worker.firstName}}</td>
+      <td>{{worker.middleInitial}}</td>
+      <td>{{worker.lastName}}</td>
+      <span class="worker-actions">
                 <a (click)="viewWorker(worker)">
                   <i class="material-icons info">info</i>
                 </a>
@@ -44,12 +46,6 @@
     </tr>
     </tbody>
   </table>
-
-
-
-
-
-
 
   <ul class="worker-list">
     <li *ngFor="let worker of workers">
