@@ -4,7 +4,7 @@ Spring Boot + Spring Rest + MongoDB + Angular
 Assumes you have mongo db installed and running
 
 In this project, we have two services being deployed...  
-Backend - Spring Boot Application that listens for REST service calls and establish a connection with mongodb using Spring Data  
+Backend - Spring Boot App that listens for REST service calls and connects with mongodb with Spring Data  
 Frontend - Display the data; emits REST calls to send/retrieve data from the backend.  
 
 Don't have to worry about CORS filtering...this is handled in back front and back.  
