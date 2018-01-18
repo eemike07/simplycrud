@@ -22,6 +22,7 @@ Find Worker By Last Name (case-insensitive)
 Create Worker
 - [POST] `http://localhost:8080/api/workers`
 Example Body Params:
+```
 {
 	"id": "1",
 	"firstName": "Bob",
@@ -38,8 +39,28 @@ Example Body Params:
 	"zipCode": 12345,
 	"isActive": true
 }
+```
 
+Update Worker
+- [PUT] `http://localhost:8080/api/workers/${worker_id_here}`
+Example Body Params:
+```
+{
+	"firstName": "Bob",
+	"lastName": "Saget",
+	"middleInitial": "Z",
+	"email": "bsaget@gmail.com",
+	"phoneNumber": "8675309",
+	"positionCategory": "Direct",
+	"dateHired": "1284723984732",
+	"addressOne": "Skyline Drive",
+	"addressTwo": "Apt 5678",
+	"city": "New York",
+	"state": "NY",
+	"zipCode": 12345,
+	"isActive": true
+}
+```
 Delete Worker
 - [DELETE] `http://localhost:8080/api/workers/${worker_id_here}`
-
 
