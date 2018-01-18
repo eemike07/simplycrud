@@ -4,9 +4,10 @@ Spring Boot + Spring Rest + MongoDB + Angular
 Assumes you have mongo db installed and running
 
 To start the backend service...
+```
 $ cd backend/
 $ mvn spring-boot:run
-
+```
 You can use postman or curl to test backend service.
 Base URL: `http://localhost:8080/api/workers`
 
