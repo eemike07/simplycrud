@@ -19,7 +19,9 @@ Don't have to worry about CORS filtering...this is handled.
 ## Mongo DB  
 Assuming mongodb is installed  
 To start...  
-`$ mongod`
+```
+$ mongod
+```
 
 ## Frontend Service  
 To start the frontend service...  
@@ -38,7 +40,7 @@ $ cd backend/
 $ mvn spring-boot:run
 ```
 You can use postman or curl to test backend service.  
-Base URL: `http://localhost:8080/api/workers`  
+Base Backend URL: `http://localhost:8080/api/workers`  
 
 ### Available REST Calls
 
